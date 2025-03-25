@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning des Repas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Planning de Repas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recettes.html">Toutes les recettes</a></li>
+                <li><a href="favoris.html">Favoris</a></li>
+                <li><a href="courses.html">Liste de courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Planifier mes repas</h2>
+        <div id="planning-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Recette</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="planning-body"></tbody>
+            </table>
+        </div>
+        <button id="export-planning">Exporter le planning</button>
+        <button id="clear-planning">Vider le planning</button>
+    </main>
+    
+    <script src="planning.js"></script>
+</body>
+</html>

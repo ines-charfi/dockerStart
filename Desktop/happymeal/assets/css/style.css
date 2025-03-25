@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #f8f9fc;
+    --accent-color: #f6c23e;
+    --text-color: #5a5c69;
+    --light-color: #ffffff;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.autocomplete-results {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.autocomplete-item:hover {
+    background-color: #f8f9fa;
+}
+
+.recipe-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.recipe-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    flex-grow: 1;
+}
+
+.recipe-card .badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.favorite-btn.active {
+    color: #dc3545;
+}
+
+.add-to-cart-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.shopping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-item-btn {
+    color: #dc3545;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.planning-cell {
+    min-height: 100px;
+    position: relative;
+}
+
+.planning-recipe {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.remove-planning-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.add-planning-btn {
+    width: 100%;
+    background: none;
+    border: 1px dashed #6c757d;
+    color: #6c757d;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-planning-btn:hover {
+    background: #f8f9fa;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.recipe {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33% - 20px);
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        margin-bottom: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav .nav-item {
+        margin-bottom: 5px;
+    }
+}

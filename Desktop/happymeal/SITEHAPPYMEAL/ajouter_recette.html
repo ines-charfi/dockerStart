@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ajouter une Recette</title>
+</head>
+<body>
+    <header>
+        <h1>Ajouter une Nouvelle Recette</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="recettes.html">Recettes</a>
+            <a href="favoris.html">Favoris</a>
+            <a href="planning.html">Planning</a>
+        </nav>
+    </header>
+    <main>
+        <form id="recette-form">
+            <label for="nom">Nom de la Recette:</label>
+            <input type="text" id="nom" required>
+
+            <label for="categorie">Catégorie:</label>
+            <input type="text" id="categorie" required>
+
+            <label for="temps_preparation">Temps de Préparation:</label>
+            <input type="text" id="temps_preparation" required>
+
+            <label for="ingredients">Ingrédients (séparés par des virgules):</label>
+            <input type="text" id="ingredients" required>
+
+            <label for="etapes">Étapes (séparées par des points-virgules):</label>
+            <textarea id="etapes" required></textarea>
+
+            <button type="submit">Ajouter la Recette</button>
+        </form>
+        <div id="message" class="hidden"></div>
+    </main>
+    <script src="ajouter_recette.js"></script>
+</body>
+</html>

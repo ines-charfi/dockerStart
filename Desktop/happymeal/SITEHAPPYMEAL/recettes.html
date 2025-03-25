@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toutes les Recettes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Toutes les Recettes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="favoris.html">Favoris</a></li>
+                <li><a href="courses.html">Liste de courses</a></li>
+                <li><a href="planning.html">Planning</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Liste des recettes</h2>
+        <div id="recettes-container"></div>
+        <div id="pagination">
+            <button id="prev">Précédent</button>
+            <span id="page-num">1</span>
+            <button id="next">Suivant</button>
+        </div>
+    </main>
+    
+    <script src="recettes.js"></script>
+</body>
+</html>

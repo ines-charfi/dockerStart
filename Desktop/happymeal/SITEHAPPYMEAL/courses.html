@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ma Liste de Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recettes.html">Toutes les recettes</a></li>
+                <li><a href="favoris.html">Favoris</a></li>
+                <li><a href="planning.html">Planning</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Ingrédients à acheter</h2>
+        <ul id="courses-list"></ul>
+        <button id="export-courses">Exporter la liste</button>
+        <button id="clear-courses">Vider la liste</button>
+    </main>
+    
+    <script src="courses.js"></script>
+</body>
+</html>

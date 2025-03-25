@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Cuisiner Facile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" id="logo" alt=""><h1>Happy Meal</h1>
+        <nav>
+            <ul>
+               
+                <li><a href="recettes.html">Toutes les recettes</a></li>
+                <li><a href="favoris.html">Favoris</a></li>
+                <li><a href="courses.html">Liste de courses</a></li>
+                <li><a href="planning.html">Planning</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <input type="text" id="search" placeholder="Rechercher une recette...">
+        <div id="suggestions"></div>
+        
+        <h2>Recettes favorites pour aujoud'hui</h2>
+        <div id="recettes-container"></div>
+        <img src="./images/tiramisu.jpg" id="loading" alt="Chargement en cours...">
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

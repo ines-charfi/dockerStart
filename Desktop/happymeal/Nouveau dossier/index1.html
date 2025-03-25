@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyMeal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo"><img src="Capture d’écran 2025-03-24 113459.png" alt="logo" width="50px" height="50px"><i class="fas fa-utensils"></i> HappyMeal</h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index1.html" class="nav-link active" id="home-link">Accueil</a></li>
+                        <li class="nav-item"><a href="touteslesrecettes.html" class="nav-link" id="recipes-link">Toutes les recettes</a></li>
+                        <li class="nav-item"><a href="favoris.html" class="nav-link" id="favorites-link">Favoris</a></li>
+                        <li class="nav-item"><a href="listedecourses.html" class="nav-link" id="shopping-link">Liste de courses</a></li>
+                        <li class="nav-item"><a href="planning.html" class="nav-link" id="planning-link">Planning</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main container">
+        <!-- Page d'accueil -->
+        <section id="home-page" class="page active">
+            <div class="hero">
+                <h2 class="hero-title">Bienvenue sur notre site HappyMeal</h2>
+                <p class="hero-subtitle">Découvrez de délicieuses recettes et trouvez l'inspiration pour vos prochains repas</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="search-input" class="search-input" placeholder="Rechercher une recette ou un ingrédient...">
+                        <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div id="autocomplete-results" class="autocomplete-results"></div>
+                </div>
+            </div>
+
+            <h3 class="section-title">Recettes favoris d'aujourd'hui</h3>
+            <div class="recipes-grid" id="random-recipes">
+                <img src="images/tiramisu.jpg" alt="Recette 1" class="recipe-image">
+                <img src="images/recipe2.jpg" alt="Recette 2" class="recipe-image">
+                <img src="images/recipe3.jpg" alt="Recette 3" class="recipe-image">
+                <!-- Recettes aléatoires seront chargées ici -->
+            </div>
+        </section>
+
+    
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2023 Mon Livre de Recettes. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
