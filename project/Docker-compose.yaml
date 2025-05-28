@@ -1,0 +1,9 @@
+
+services:
+  reactmemory:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reactmemory_app
+    ports:
+      - "3000:80"
